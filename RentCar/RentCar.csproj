@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD351608-3C3E-4A9D-8090-E1C07B826750}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RentCar</RootNamespace>
+    <AssemblyName>RentCar</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteLista.Designer.cs">
+      <DependentUpon>ClienteLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteCrear.Designer.cs">
+      <DependentUpon>ClienteCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar.Designer.cs">
+      <DependentUpon>Consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Empleado.Designer.cs">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoCrear.Designer.cs">
+      <DependentUpon>EmpleadoCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoLista.Designer.cs">
+      <DependentUpon>EmpleadoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inspeccionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inspeccionar.Designer.cs">
+      <DependentUpon>Inspeccionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcaVehiculoCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcaVehiculoCrear.Designer.cs">
+      <DependentUpon>MarcaVehiculoCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloVehiculoCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeloVehiculoCrear.Designer.cs">
+      <DependentUpon>ModeloVehiculoCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Renta.Designer.cs">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentaCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentaCrear.Designer.cs">
+      <DependentUpon>RentaCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentaLista.Designer.cs">
+      <DependentUpon>RentaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte.Designer.cs">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCombustibleCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoCombustibleCrear.Designer.cs">
+      <DependentUpon>TipoCombustibleCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoVehiculoCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoVehiculoCrear.Designer.cs">
+      <DependentUpon>TipoVehiculoCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehiculoCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiculoCrear.Designer.cs">
+      <DependentUpon>VehiculoCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehiculoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehiculoLista.Designer.cs">
+      <DependentUpon>VehiculoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehiculos.Designer.cs">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteLista.resx">
+      <DependentUpon>ClienteLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteCrear.resx">
+      <DependentUpon>ClienteCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar.resx">
+      <DependentUpon>Consultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoCrear.resx">
+      <DependentUpon>EmpleadoCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoLista.resx">
+      <DependentUpon>EmpleadoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inspeccionar.resx">
+      <DependentUpon>Inspeccionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcaVehiculoCrear.resx">
+      <DependentUpon>MarcaVehiculoCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeloVehiculoCrear.resx">
+      <DependentUpon>ModeloVehiculoCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Renta.resx">
+      <DependentUpon>Renta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentaCrear.resx">
+      <DependentUpon>RentaCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentaLista.resx">
+      <DependentUpon>RentaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoCombustibleCrear.resx">
+      <DependentUpon>TipoCombustibleCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoVehiculoCrear.resx">
+      <DependentUpon>TipoVehiculoCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiculoCrear.resx">
+      <DependentUpon>VehiculoCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehiculoLista.resx">
+      <DependentUpon>VehiculoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehiculos.resx">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RentCar.Data\RentCar.Data.csproj">
+      <Project>{f9f5b8b5-591b-417a-8735-6c3e3d078449}</Project>
+      <Name>RentCar.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RentCar.Service\RentCar.Service.csproj">
+      <Project>{7c3b6e03-9391-4347-9b35-3bfda5a3c0b4}</Project>
+      <Name>RentCar.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="img\iconfinder_notepad_285631.png" />
+    <Content Include="img\iconfinder_sign-add_299068.png" />
+    <Content Include="img\iconfinder_user-group_285648.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
