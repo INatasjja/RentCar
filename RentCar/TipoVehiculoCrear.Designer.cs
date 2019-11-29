@@ -49,7 +49,7 @@
             this.dgvTipoVehiculo.AllowUserToDeleteRows = false;
             this.dgvTipoVehiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTipoVehiculo.Location = new System.Drawing.Point(16, 139);
-            this.dgvTipoVehiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTipoVehiculo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTipoVehiculo.Name = "dgvTipoVehiculo";
             this.dgvTipoVehiculo.ReadOnly = true;
             this.dgvTipoVehiculo.Size = new System.Drawing.Size(401, 250);
@@ -60,6 +60,7 @@
             this.lblTipoVehiculoTitulo.AutoSize = true;
             this.lblTipoVehiculoTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblTipoVehiculoTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoVehiculoTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTipoVehiculoTitulo.Location = new System.Drawing.Point(16, 11);
             this.lblTipoVehiculoTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoVehiculoTitulo.Name = "lblTipoVehiculoTitulo";
@@ -72,7 +73,7 @@
             this.btnTipoVehiculoGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnTipoVehiculoGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoVehiculoGuardar.Location = new System.Drawing.Point(546, 187);
-            this.btnTipoVehiculoGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoVehiculoGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoVehiculoGuardar.Name = "btnTipoVehiculoGuardar";
             this.btnTipoVehiculoGuardar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoVehiculoGuardar.TabIndex = 27;
@@ -85,7 +86,7 @@
             this.btnTipoVehiculoEditar.BackColor = System.Drawing.Color.Salmon;
             this.btnTipoVehiculoEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoVehiculoEditar.Location = new System.Drawing.Point(546, 231);
-            this.btnTipoVehiculoEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoVehiculoEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoVehiculoEditar.Name = "btnTipoVehiculoEditar";
             this.btnTipoVehiculoEditar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoVehiculoEditar.TabIndex = 28;
@@ -98,7 +99,7 @@
             this.btnTipoVehiculoEliminar.BackColor = System.Drawing.Color.Teal;
             this.btnTipoVehiculoEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoVehiculoEliminar.Location = new System.Drawing.Point(546, 276);
-            this.btnTipoVehiculoEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoVehiculoEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoVehiculoEliminar.Name = "btnTipoVehiculoEliminar";
             this.btnTipoVehiculoEliminar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoVehiculoEliminar.TabIndex = 29;
@@ -110,7 +111,7 @@
             // 
             this.txtTipoVehiculoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipoVehiculoDescripcion.Location = new System.Drawing.Point(449, 128);
-            this.txtTipoVehiculoDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipoVehiculoDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipoVehiculoDescripcion.Name = "txtTipoVehiculoDescripcion";
             this.txtTipoVehiculoDescripcion.Size = new System.Drawing.Size(319, 30);
             this.txtTipoVehiculoDescripcion.TabIndex = 30;
@@ -119,6 +120,7 @@
             // 
             this.lblTipoVehiculoDescripcion.AutoSize = true;
             this.lblTipoVehiculoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoVehiculoDescripcion.ForeColor = System.Drawing.Color.White;
             this.lblTipoVehiculoDescripcion.Location = new System.Drawing.Point(444, 94);
             this.lblTipoVehiculoDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoVehiculoDescripcion.Name = "lblTipoVehiculoDescripcion";
@@ -131,7 +133,7 @@
             this.btnTipoVehiculoCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoVehiculoCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnTipoVehiculoCancelar.Location = new System.Drawing.Point(546, 320);
-            this.btnTipoVehiculoCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoVehiculoCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoVehiculoCancelar.Name = "btnTipoVehiculoCancelar";
             this.btnTipoVehiculoCancelar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoVehiculoCancelar.TabIndex = 32;
@@ -156,6 +158,7 @@
             // 
             this.lblTipoVehiculoBuscar.AutoSize = true;
             this.lblTipoVehiculoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoVehiculoBuscar.ForeColor = System.Drawing.Color.White;
             this.lblTipoVehiculoBuscar.Location = new System.Drawing.Point(20, 98);
             this.lblTipoVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoVehiculoBuscar.Name = "lblTipoVehiculoBuscar";
@@ -167,7 +170,7 @@
             // 
             this.txtTipoVehiculoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipoVehiculoBuscar.Location = new System.Drawing.Point(112, 95);
-            this.txtTipoVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipoVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipoVehiculoBuscar.Name = "txtTipoVehiculoBuscar";
             this.txtTipoVehiculoBuscar.Size = new System.Drawing.Size(208, 30);
             this.txtTipoVehiculoBuscar.TabIndex = 50;
@@ -190,10 +193,10 @@
             this.Controls.Add(this.btnTipoVehiculoGuardar);
             this.Controls.Add(this.lblTipoVehiculoTitulo);
             this.Controls.Add(this.dgvTipoVehiculo);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TipoVehicloCrear";

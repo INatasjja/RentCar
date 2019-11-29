@@ -44,7 +44,7 @@
             this.btnVehiculoLCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehiculoLCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnVehiculoLCancelar.Location = new System.Drawing.Point(1012, 537);
-            this.btnVehiculoLCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVehiculoLCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVehiculoLCancelar.Name = "btnVehiculoLCancelar";
             this.btnVehiculoLCancelar.Size = new System.Drawing.Size(120, 37);
             this.btnVehiculoLCancelar.TabIndex = 19;
@@ -57,7 +57,7 @@
             this.btnVehiculoLEliminar.BackColor = System.Drawing.Color.Teal;
             this.btnVehiculoLEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehiculoLEliminar.Location = new System.Drawing.Point(884, 537);
-            this.btnVehiculoLEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVehiculoLEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVehiculoLEliminar.Name = "btnVehiculoLEliminar";
             this.btnVehiculoLEliminar.Size = new System.Drawing.Size(120, 37);
             this.btnVehiculoLEliminar.TabIndex = 18;
@@ -70,7 +70,7 @@
             this.btnVehiculoLEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnVehiculoLEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVehiculoLEditar.Location = new System.Drawing.Point(756, 537);
-            this.btnVehiculoLEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVehiculoLEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVehiculoLEditar.Name = "btnVehiculoLEditar";
             this.btnVehiculoLEditar.Size = new System.Drawing.Size(120, 37);
             this.btnVehiculoLEditar.TabIndex = 17;
@@ -97,7 +97,7 @@
             this.dgvVehiculos.AllowUserToDeleteRows = false;
             this.dgvVehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVehiculos.Location = new System.Drawing.Point(16, 96);
-            this.dgvVehiculos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvVehiculos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvVehiculos.Name = "dgvVehiculos";
             this.dgvVehiculos.ReadOnly = true;
             this.dgvVehiculos.Size = new System.Drawing.Size(1116, 414);
@@ -107,6 +107,7 @@
             // 
             this.lblVehiculoBuscar.AutoSize = true;
             this.lblVehiculoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVehiculoBuscar.ForeColor = System.Drawing.Color.White;
             this.lblVehiculoBuscar.Location = new System.Drawing.Point(831, 32);
             this.lblVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVehiculoBuscar.Name = "lblVehiculoBuscar";
@@ -118,7 +119,7 @@
             // 
             this.txtVehiculoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVehiculoBuscar.Location = new System.Drawing.Point(923, 28);
-            this.txtVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtVehiculoBuscar.Name = "txtVehiculoBuscar";
             this.txtVehiculoBuscar.Size = new System.Drawing.Size(208, 30);
             this.txtVehiculoBuscar.TabIndex = 20;
@@ -137,10 +138,10 @@
             this.Controls.Add(this.btnVehiculoLEditar);
             this.Controls.Add(this.lblVehiculoTitulo);
             this.Controls.Add(this.dgvVehiculos);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "VehiculoLista";

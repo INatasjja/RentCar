@@ -37,6 +37,7 @@ namespace RentCar
             int DiasRentar = Convert.ToInt32(txtRentaDias.Value);
             var devolucion = DateTime.Today.AddDays(DiasRentar);
             lblRentaFechaDevolucion.Text = devolucion.ToString("dd/MM/yyyy");
+
         }
 
         private void btnCliCancelar_Click(object sender, EventArgs e)
@@ -125,10 +126,10 @@ namespace RentCar
             }
             else
             {
-                var empleado = _context.Empleado.Where(x => x.Nombre == lblRentaEmpleado.Text).SingleOrDefault()?.Id;
+                var empleado = _context.Empleado.Where(x => x.Usuario == lblRentaEmpleado.Text).SingleOrDefault()?.Id;
                 var procesoRenta = new Data.Entidades.ProcesoRenta
                 {
-                    Id = lblRentaId.Text == "Renta ID" ? 0 : Convert.ToInt32(lblRentaId.Text),
+                    //Id = lblRentaId.Text == "Renta ID" ? 0 : Convert.ToInt32(lblRentaId.Text),
                     VehiculoId = Convert.ToInt32(cbRentaVehiculo.SelectedValue),
                     ClienteId = Convert.ToInt32(cbRentaCliente.SelectedValue),
                     EmpleadoId = Convert.ToInt32(empleado),
@@ -142,7 +143,6 @@ namespace RentCar
                 };
 
                 _procesoRenta.Save(procesoRenta);
-
                 // Cambiar el estado del vehiculo de disponible a no disponible
                 int renta = Convert.ToInt32(cbEstatusRenta.SelectedValue);
                 if (renta == 1)
@@ -181,7 +181,7 @@ namespace RentCar
             {
                 Dispose();
                 var rentaLista = new RentaLista();
-                rentaLista.Show();
+                //rentaLista.Show();
             }
         }
 
@@ -192,6 +192,16 @@ namespace RentCar
             {
                 e.Handled = true;
             }
+        }
+
+        private void lblRentaId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRentaEmpleado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

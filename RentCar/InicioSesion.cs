@@ -34,6 +34,7 @@ namespace RentCar
 
         public static string ConectedUser;
         public static bool admin;
+        public static int id;
 
         private void btnInicioEntrar_Click(object sender, EventArgs e)
         {
@@ -60,7 +61,6 @@ namespace RentCar
                 {
                     var adminQuery = _context.Empleado.FirstOrDefault(u => u.Usuario == txtInicioUsuario.Text && u.Pass == txtInicioContra.Text && u.Cargo == true);
                     var normalQuery = _context.Empleado.FirstOrDefault(u => u.Usuario == txtInicioUsuario.Text && u.Pass == txtInicioContra.Text && u.Cargo == false);
-          
                     if (adminQuery != null)
                     {
                         //get the user that is logged to send it to the main form

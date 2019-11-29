@@ -48,12 +48,12 @@
             this.lblCliTipoCli = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtRentaComentario = new System.Windows.Forms.TextBox();
-            this.lblRentaId = new System.Windows.Forms.Label();
             this.lblRentaEmpleado = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtRentaTotal = new System.Windows.Forms.TextBox();
             this.lblRentaFechaDevolucion = new System.Windows.Forms.Label();
             this.cbEstatusRenta = new System.Windows.Forms.ComboBox();
+            this.lblRentaId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtRentaDias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,7 +107,7 @@
             this.cbRentaCliente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRentaCliente.FormattingEnabled = true;
             this.cbRentaCliente.Location = new System.Drawing.Point(169, 74);
-            this.cbRentaCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRentaCliente.Margin = new System.Windows.Forms.Padding(4);
             this.cbRentaCliente.Name = "cbRentaCliente";
             this.cbRentaCliente.Size = new System.Drawing.Size(239, 31);
             this.cbRentaCliente.TabIndex = 72;
@@ -118,7 +118,7 @@
             this.cbRentaVehiculo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRentaVehiculo.FormattingEnabled = true;
             this.cbRentaVehiculo.Location = new System.Drawing.Point(168, 126);
-            this.cbRentaVehiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRentaVehiculo.Margin = new System.Windows.Forms.Padding(4);
             this.cbRentaVehiculo.Name = "cbRentaVehiculo";
             this.cbRentaVehiculo.Size = new System.Drawing.Size(239, 31);
             this.cbRentaVehiculo.TabIndex = 71;
@@ -160,7 +160,7 @@
             // 
             this.txtRentaMonto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentaMonto.Location = new System.Drawing.Point(665, 76);
-            this.txtRentaMonto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRentaMonto.Margin = new System.Windows.Forms.Padding(4);
             this.txtRentaMonto.Name = "txtRentaMonto";
             this.txtRentaMonto.Size = new System.Drawing.Size(172, 30);
             this.txtRentaMonto.TabIndex = 80;
@@ -183,7 +183,7 @@
             // 
             this.txtRentaDias.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentaDias.Location = new System.Drawing.Point(670, 131);
-            this.txtRentaDias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRentaDias.Margin = new System.Windows.Forms.Padding(4);
             this.txtRentaDias.Minimum = new decimal(new int[] {
             1,
             0,
@@ -213,7 +213,7 @@
             this.btnCliCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCliCancelar.Location = new System.Drawing.Point(937, 491);
-            this.btnCliCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCliCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCliCancelar.Name = "btnCliCancelar";
             this.btnCliCancelar.Size = new System.Drawing.Size(120, 37);
             this.btnCliCancelar.TabIndex = 87;
@@ -226,7 +226,7 @@
             this.btnCliGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCliGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliGuardar.Location = new System.Drawing.Point(792, 491);
-            this.btnCliGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCliGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCliGuardar.Name = "btnCliGuardar";
             this.btnCliGuardar.Size = new System.Drawing.Size(120, 37);
             this.btnCliGuardar.TabIndex = 88;
@@ -271,34 +271,23 @@
             // 
             this.txtRentaComentario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRentaComentario.Location = new System.Drawing.Point(437, 275);
-            this.txtRentaComentario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRentaComentario.Margin = new System.Windows.Forms.Padding(4);
             this.txtRentaComentario.Multiline = true;
             this.txtRentaComentario.Name = "txtRentaComentario";
             this.txtRentaComentario.Size = new System.Drawing.Size(613, 123);
             this.txtRentaComentario.TabIndex = 94;
             // 
-            // lblRentaId
-            // 
-            this.lblRentaId.AutoSize = true;
-            this.lblRentaId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRentaId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblRentaId.Location = new System.Drawing.Point(895, 79);
-            this.lblRentaId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblRentaId.Name = "lblRentaId";
-            this.lblRentaId.Size = new System.Drawing.Size(139, 36);
-            this.lblRentaId.TabIndex = 95;
-            this.lblRentaId.Text = "Renta ID";
-            // 
             // lblRentaEmpleado
             // 
             this.lblRentaEmpleado.AutoSize = true;
             this.lblRentaEmpleado.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRentaEmpleado.Location = new System.Drawing.Point(164, 282);
+            this.lblRentaEmpleado.Location = new System.Drawing.Point(164, 281);
             this.lblRentaEmpleado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRentaEmpleado.Name = "lblRentaEmpleado";
             this.lblRentaEmpleado.Size = new System.Drawing.Size(199, 23);
             this.lblRentaEmpleado.TabIndex = 96;
             this.lblRentaEmpleado.Text = "Empleado Conectado";
+            this.lblRentaEmpleado.Click += new System.EventHandler(this.lblRentaEmpleado_Click);
             // 
             // label5
             // 
@@ -314,8 +303,8 @@
             // txtRentaTotal
             // 
             this.txtRentaTotal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRentaTotal.Location = new System.Drawing.Point(169, 214);
-            this.txtRentaTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRentaTotal.Location = new System.Drawing.Point(181, 214);
+            this.txtRentaTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtRentaTotal.Name = "txtRentaTotal";
             this.txtRentaTotal.ReadOnly = true;
             this.txtRentaTotal.Size = new System.Drawing.Size(152, 30);
@@ -338,10 +327,23 @@
             this.cbEstatusRenta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstatusRenta.FormattingEnabled = true;
             this.cbEstatusRenta.Location = new System.Drawing.Point(169, 344);
-            this.cbEstatusRenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbEstatusRenta.Margin = new System.Windows.Forms.Padding(4);
             this.cbEstatusRenta.Name = "cbEstatusRenta";
             this.cbEstatusRenta.Size = new System.Drawing.Size(106, 31);
             this.cbEstatusRenta.TabIndex = 100;
+            // 
+            // lblRentaId
+            // 
+            this.lblRentaId.AutoSize = true;
+            this.lblRentaId.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRentaId.ForeColor = System.Drawing.Color.Black;
+            this.lblRentaId.Location = new System.Drawing.Point(895, 79);
+            this.lblRentaId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRentaId.Name = "lblRentaId";
+            this.lblRentaId.Size = new System.Drawing.Size(139, 36);
+            this.lblRentaId.TabIndex = 95;
+            this.lblRentaId.Text = "Renta ID";
+            this.lblRentaId.Click += new System.EventHandler(this.lblRentaId_Click);
             // 
             // RentaCrear
             // 
@@ -377,7 +379,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RentaCrear";
@@ -410,11 +412,11 @@
         private System.Windows.Forms.Label lblCliTipoCli;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtRentaComentario;
-        private System.Windows.Forms.Label lblRentaId;
         private System.Windows.Forms.Label lblRentaEmpleado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtRentaTotal;
         private System.Windows.Forms.Label lblRentaFechaDevolucion;
         private System.Windows.Forms.ComboBox cbEstatusRenta;
+        private System.Windows.Forms.Label lblRentaId;
     }
 }

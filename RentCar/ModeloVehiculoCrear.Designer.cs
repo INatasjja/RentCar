@@ -49,6 +49,7 @@
             // 
             this.lblModeloDescripcion.AutoSize = true;
             this.lblModeloDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModeloDescripcion.ForeColor = System.Drawing.Color.White;
             this.lblModeloDescripcion.Location = new System.Drawing.Point(518, 58);
             this.lblModeloDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblModeloDescripcion.Name = "lblModeloDescripcion";
@@ -60,7 +61,7 @@
             // 
             this.txtModeloDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModeloDescripcion.Location = new System.Drawing.Point(535, 102);
-            this.txtModeloDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtModeloDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtModeloDescripcion.Name = "txtModeloDescripcion";
             this.txtModeloDescripcion.Size = new System.Drawing.Size(247, 30);
             this.txtModeloDescripcion.TabIndex = 51;
@@ -70,7 +71,7 @@
             this.btnModeloEliminar.BackColor = System.Drawing.Color.Teal;
             this.btnModeloEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModeloEliminar.Location = new System.Drawing.Point(662, 273);
-            this.btnModeloEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModeloEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModeloEliminar.Name = "btnModeloEliminar";
             this.btnModeloEliminar.Size = new System.Drawing.Size(120, 37);
             this.btnModeloEliminar.TabIndex = 50;
@@ -83,7 +84,7 @@
             this.btnModeloEditar.BackColor = System.Drawing.Color.Salmon;
             this.btnModeloEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModeloEditar.Location = new System.Drawing.Point(535, 318);
-            this.btnModeloEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModeloEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModeloEditar.Name = "btnModeloEditar";
             this.btnModeloEditar.Size = new System.Drawing.Size(120, 37);
             this.btnModeloEditar.TabIndex = 49;
@@ -96,7 +97,7 @@
             this.btnModeloGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnModeloGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModeloGuardar.Location = new System.Drawing.Point(534, 273);
-            this.btnModeloGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModeloGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModeloGuardar.Name = "btnModeloGuardar";
             this.btnModeloGuardar.Size = new System.Drawing.Size(120, 37);
             this.btnModeloGuardar.TabIndex = 48;
@@ -109,6 +110,7 @@
             this.lblMarcaTitulo.AutoSize = true;
             this.lblMarcaTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblMarcaTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarcaTitulo.ForeColor = System.Drawing.Color.White;
             this.lblMarcaTitulo.Location = new System.Drawing.Point(16, 11);
             this.lblMarcaTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMarcaTitulo.Name = "lblMarcaTitulo";
@@ -122,7 +124,7 @@
             this.dgvModelo.AllowUserToDeleteRows = false;
             this.dgvModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvModelo.Location = new System.Drawing.Point(16, 118);
-            this.dgvModelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvModelo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvModelo.Name = "dgvModelo";
             this.dgvModelo.ReadOnly = true;
             this.dgvModelo.Size = new System.Drawing.Size(401, 250);
@@ -132,6 +134,7 @@
             // 
             this.lblModeloMarca.AutoSize = true;
             this.lblModeloMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModeloMarca.ForeColor = System.Drawing.Color.White;
             this.lblModeloMarca.Location = new System.Drawing.Point(518, 170);
             this.lblModeloMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblModeloMarca.Name = "lblModeloMarca";
@@ -145,7 +148,7 @@
             this.cbModeloMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbModeloMarca.FormattingEnabled = true;
             this.cbModeloMarca.Location = new System.Drawing.Point(535, 203);
-            this.cbModeloMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbModeloMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cbModeloMarca.Name = "cbModeloMarca";
             this.cbModeloMarca.Size = new System.Drawing.Size(247, 33);
             this.cbModeloMarca.TabIndex = 54;
@@ -155,7 +158,7 @@
             this.btnModeloCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModeloCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnModeloCancelar.Location = new System.Drawing.Point(662, 318);
-            this.btnModeloCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModeloCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModeloCancelar.Name = "btnModeloCancelar";
             this.btnModeloCancelar.Size = new System.Drawing.Size(120, 37);
             this.btnModeloCancelar.TabIndex = 55;
@@ -180,6 +183,7 @@
             // 
             this.lblModeloVehiculoBuscar.AutoSize = true;
             this.lblModeloVehiculoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModeloVehiculoBuscar.ForeColor = System.Drawing.Color.White;
             this.lblModeloVehiculoBuscar.Location = new System.Drawing.Point(16, 78);
             this.lblModeloVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblModeloVehiculoBuscar.Name = "lblModeloVehiculoBuscar";
@@ -191,7 +195,7 @@
             // 
             this.txtModeloVehiculoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModeloVehiculoBuscar.Location = new System.Drawing.Point(108, 74);
-            this.txtModeloVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtModeloVehiculoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtModeloVehiculoBuscar.Name = "txtModeloVehiculoBuscar";
             this.txtModeloVehiculoBuscar.Size = new System.Drawing.Size(208, 30);
             this.txtModeloVehiculoBuscar.TabIndex = 57;
@@ -216,10 +220,10 @@
             this.Controls.Add(this.btnModeloGuardar);
             this.Controls.Add(this.lblMarcaTitulo);
             this.Controls.Add(this.dgvModelo);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ModeloVehiculoCrear";

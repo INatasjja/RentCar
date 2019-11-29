@@ -96,10 +96,10 @@ namespace RentCar
                 }
 
                 DateTime today = DateTime.Today;
-                var empleado = _context.Empleado.Where(x => x.Nombre == lblInspecEmpConectado.Text).SingleOrDefault()?.Id;
+                var empleado = _context.Empleado.Where(x => x.Usuario == lblInspecEmpConectado.Text).SingleOrDefault()?.Id;
                 var inspeccion = new Data.Entidades.Inspeccion
                 {
-                    Id = lblInspecId.Text == "Inspeccion ID" ? 0 : Convert.ToInt32(lblInspecId.Text),
+                    //Id = lblInspecId.Text == "Inspeccion ID" ? 0 : Convert.ToInt32(lblInspecId.Text),
                     VehiculoId = Convert.ToInt32(cbInspecVehiculo.SelectedValue),
                     ClienteId = Convert.ToInt32(cbInspecCliente.SelectedValue),
                     EmpleadoId = Convert.ToInt32(empleado),

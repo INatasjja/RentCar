@@ -30,8 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblEmpleadoConectado = new System.Windows.Forms.Label();
+            this.btnEmpleados = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
             this.panelSelector = new System.Windows.Forms.Panel();
             this.btnReporte = new System.Windows.Forms.Button();
@@ -40,6 +39,8 @@
             this.btnInspeccion = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnVehiculos = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblEmpleadoConectado = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.btnEmpleado = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnEmpleados = new System.Windows.Forms.Button();
             this.inicio1 = new RentCar.Inicio();
             this.empleado1 = new RentCar.Empleado();
             this.renta1 = new RentCar.Renta();
@@ -76,30 +76,24 @@
             this.panel1.Size = new System.Drawing.Size(1327, 77);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btnEmpleados
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(46, 336);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 28);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Bienvenido";
-            // 
-            // lblEmpleadoConectado
-            // 
-            this.lblEmpleadoConectado.AutoSize = true;
-            this.lblEmpleadoConectado.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpleadoConectado.ForeColor = System.Drawing.Color.White;
-            this.lblEmpleadoConectado.Location = new System.Drawing.Point(35, 373);
-            this.lblEmpleadoConectado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEmpleadoConectado.Name = "lblEmpleadoConectado";
-            this.lblEmpleadoConectado.Size = new System.Drawing.Size(145, 25);
-            this.lblEmpleadoConectado.TabIndex = 8;
-            this.lblEmpleadoConectado.Text = "*Empleado*";
-            this.lblEmpleadoConectado.Click += new System.EventHandler(this.lblEmpleadoConectado_Click);
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(68)))), ((int)(((byte)(65)))));
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.ForeColor = System.Drawing.Color.White;
+            this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
+            this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmpleados.Location = new System.Drawing.Point(1142, 5);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(187, 66);
+            this.btnEmpleados.TabIndex = 8;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // btnInicio
             // 
@@ -245,6 +239,31 @@
             this.btnVehiculos.UseVisualStyleBackColor = true;
             this.btnVehiculos.Click += new System.EventHandler(this.btnVehiculos_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(46, 336);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 28);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Bienvenido";
+            // 
+            // lblEmpleadoConectado
+            // 
+            this.lblEmpleadoConectado.AutoSize = true;
+            this.lblEmpleadoConectado.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleadoConectado.ForeColor = System.Drawing.Color.White;
+            this.lblEmpleadoConectado.Location = new System.Drawing.Point(35, 373);
+            this.lblEmpleadoConectado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmpleadoConectado.Name = "lblEmpleadoConectado";
+            this.lblEmpleadoConectado.Size = new System.Drawing.Size(145, 25);
+            this.lblEmpleadoConectado.TabIndex = 8;
+            this.lblEmpleadoConectado.Text = "*Empleado*";
+            this.lblEmpleadoConectado.Click += new System.EventHandler(this.lblEmpleadoConectado_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -340,25 +359,6 @@
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnEmpleados
-            // 
-            this.btnEmpleados.FlatAppearance.BorderSize = 0;
-            this.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(68)))), ((int)(((byte)(65)))));
-            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpleados.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpleados.ForeColor = System.Drawing.Color.White;
-            this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
-            this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(1142, 5);
-            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(187, 66);
-            this.btnEmpleados.TabIndex = 8;
-            this.btnEmpleados.Text = "Empleados";
-            this.btnEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEmpleados.UseVisualStyleBackColor = true;
-            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
             // inicio1
             // 

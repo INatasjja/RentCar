@@ -47,6 +47,7 @@
             // 
             this.lblTipoCombustibleDescripcion.AutoSize = true;
             this.lblTipoCombustibleDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoCombustibleDescripcion.ForeColor = System.Drawing.Color.White;
             this.lblTipoCombustibleDescripcion.Location = new System.Drawing.Point(449, 94);
             this.lblTipoCombustibleDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoCombustibleDescripcion.Name = "lblTipoCombustibleDescripcion";
@@ -58,7 +59,7 @@
             // 
             this.txtTipoCombustibleDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipoCombustibleDescripcion.Location = new System.Drawing.Point(454, 128);
-            this.txtTipoCombustibleDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipoCombustibleDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipoCombustibleDescripcion.Name = "txtTipoCombustibleDescripcion";
             this.txtTipoCombustibleDescripcion.Size = new System.Drawing.Size(319, 30);
             this.txtTipoCombustibleDescripcion.TabIndex = 37;
@@ -68,7 +69,7 @@
             this.btnTipoCombustibleEliminar.BackColor = System.Drawing.Color.Teal;
             this.btnTipoCombustibleEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoCombustibleEliminar.Location = new System.Drawing.Point(546, 274);
-            this.btnTipoCombustibleEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoCombustibleEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoCombustibleEliminar.Name = "btnTipoCombustibleEliminar";
             this.btnTipoCombustibleEliminar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoCombustibleEliminar.TabIndex = 36;
@@ -81,7 +82,7 @@
             this.btnTipoCombustibleEditar.BackColor = System.Drawing.Color.Salmon;
             this.btnTipoCombustibleEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoCombustibleEditar.Location = new System.Drawing.Point(546, 229);
-            this.btnTipoCombustibleEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoCombustibleEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoCombustibleEditar.Name = "btnTipoCombustibleEditar";
             this.btnTipoCombustibleEditar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoCombustibleEditar.TabIndex = 35;
@@ -94,7 +95,7 @@
             this.btnTipoCombustibleGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnTipoCombustibleGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoCombustibleGuardar.Location = new System.Drawing.Point(546, 185);
-            this.btnTipoCombustibleGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoCombustibleGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoCombustibleGuardar.Name = "btnTipoCombustibleGuardar";
             this.btnTipoCombustibleGuardar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoCombustibleGuardar.TabIndex = 34;
@@ -107,6 +108,7 @@
             this.lblTipoCombustibleTitulo.AutoSize = true;
             this.lblTipoCombustibleTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblTipoCombustibleTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoCombustibleTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTipoCombustibleTitulo.Location = new System.Drawing.Point(16, 11);
             this.lblTipoCombustibleTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoCombustibleTitulo.Name = "lblTipoCombustibleTitulo";
@@ -120,7 +122,7 @@
             this.dgvTipoCombustible.AllowUserToDeleteRows = false;
             this.dgvTipoCombustible.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTipoCombustible.Location = new System.Drawing.Point(16, 139);
-            this.dgvTipoCombustible.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTipoCombustible.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTipoCombustible.Name = "dgvTipoCombustible";
             this.dgvTipoCombustible.ReadOnly = true;
             this.dgvTipoCombustible.Size = new System.Drawing.Size(401, 250);
@@ -131,7 +133,7 @@
             this.btnTipoCombustibleCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTipoCombustibleCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnTipoCombustibleCancelar.Location = new System.Drawing.Point(546, 318);
-            this.btnTipoCombustibleCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTipoCombustibleCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnTipoCombustibleCancelar.Name = "btnTipoCombustibleCancelar";
             this.btnTipoCombustibleCancelar.Size = new System.Drawing.Size(120, 37);
             this.btnTipoCombustibleCancelar.TabIndex = 39;
@@ -156,6 +158,7 @@
             // 
             this.lblCombustibleBuscar.AutoSize = true;
             this.lblCombustibleBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCombustibleBuscar.ForeColor = System.Drawing.Color.White;
             this.lblCombustibleBuscar.Location = new System.Drawing.Point(16, 98);
             this.lblCombustibleBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCombustibleBuscar.Name = "lblCombustibleBuscar";
@@ -167,7 +170,7 @@
             // 
             this.txtCombustibleBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCombustibleBuscar.Location = new System.Drawing.Point(108, 95);
-            this.txtCombustibleBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCombustibleBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtCombustibleBuscar.Name = "txtCombustibleBuscar";
             this.txtCombustibleBuscar.Size = new System.Drawing.Size(208, 30);
             this.txtCombustibleBuscar.TabIndex = 49;
@@ -190,10 +193,10 @@
             this.Controls.Add(this.btnTipoCombustibleGuardar);
             this.Controls.Add(this.lblTipoCombustibleTitulo);
             this.Controls.Add(this.dgvTipoCombustible);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TipoCombustibleCrear";

@@ -109,26 +109,33 @@ namespace RentCar
                 {
                     estado = 2;
                 }
-
-                var vehiculo = new Data.Entidades.Vehiculo
+                try
                 {
-                    Id = lblVehiculoId.Text == "Vehiculo ID" ? 0 : Convert.ToInt32(lblVehiculoId.Text),
-                    Descripcion = txtVehiculoDescripcion.Text,
-                    TipoVehiculoId = Convert.ToInt32(cbVehiculoTipo.SelectedValue),
-                    MarcaId = Convert.ToInt32(cbVehiculoMarca.SelectedValue),
-                    ModeloId = Convert.ToInt32(cbVehiculoModelo.SelectedValue),
-                    CombustibleId = Convert.ToInt32(cbVehiculoCombustible.SelectedValue),
-                    NumeroChasis = txtVehiculoChasis.Text,
-                    NumeroMotor = txtVehiculoMotor.Text,
-                    NumeroPlaca = txtVehiculoPlaca.Text,
-                    EstadoId = estado
-                };
+                    var vehiculo = new Data.Entidades.Vehiculo
+                    {
+                       // Id = lblVehiculoId.Text == "Vehiculo ID" ? 0 : Convert.ToInt32(lblVehiculoId.Text),
+                        Descripcion = txtVehiculoDescripcion.Text,
+                        TipoVehiculoId = Convert.ToInt32(cbVehiculoTipo.SelectedValue),
+                        MarcaId = Convert.ToInt32(cbVehiculoMarca.SelectedValue),
+                        ModeloId = Convert.ToInt32(cbVehiculoModelo.SelectedValue),
+                        CombustibleId = Convert.ToInt32(cbVehiculoCombustible.SelectedValue),
+                        NumeroChasis = txtVehiculoChasis.Text,
+                        NumeroMotor = txtVehiculoMotor.Text,
+                        NumeroPlaca = txtVehiculoPlaca.Text,
+                        EstadoId = estado
+                    };
 
-                _vehiculoService.Save(vehiculo);
+                    _vehiculoService.Save(vehiculo);
 
-                MessageBox.Show("El vehiculo se ha guardado exitosamente",
-                "Vehiculo guardado",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El vehiculo se ha guardado exitosamente",
+                    "Vehiculo guardado",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } catch (Exception ex)
+                {
+                    MessageBox.Show("Error",
+                    ex.ToString(),
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
 
             if (lblVehiculoId.Text == "Vehiculo ID")

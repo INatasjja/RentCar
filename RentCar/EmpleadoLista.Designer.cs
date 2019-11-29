@@ -44,7 +44,7 @@
             this.btnEmpleadoLCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleadoLCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnEmpleadoLCancelar.Location = new System.Drawing.Point(1012, 535);
-            this.btnEmpleadoLCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpleadoLCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleadoLCancelar.Name = "btnEmpleadoLCancelar";
             this.btnEmpleadoLCancelar.Size = new System.Drawing.Size(120, 37);
             this.btnEmpleadoLCancelar.TabIndex = 19;
@@ -57,7 +57,7 @@
             this.btnEmpleadoLEliminar.BackColor = System.Drawing.Color.Teal;
             this.btnEmpleadoLEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleadoLEliminar.Location = new System.Drawing.Point(884, 535);
-            this.btnEmpleadoLEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpleadoLEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleadoLEliminar.Name = "btnEmpleadoLEliminar";
             this.btnEmpleadoLEliminar.Size = new System.Drawing.Size(120, 37);
             this.btnEmpleadoLEliminar.TabIndex = 18;
@@ -70,7 +70,7 @@
             this.btnEmpleadoLEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEmpleadoLEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleadoLEditar.Location = new System.Drawing.Point(756, 535);
-            this.btnEmpleadoLEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpleadoLEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleadoLEditar.Name = "btnEmpleadoLEditar";
             this.btnEmpleadoLEditar.Size = new System.Drawing.Size(120, 37);
             this.btnEmpleadoLEditar.TabIndex = 17;
@@ -83,6 +83,7 @@
             this.lblEmpleadosTitulo.AutoSize = true;
             this.lblEmpleadosTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblEmpleadosTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleadosTitulo.ForeColor = System.Drawing.Color.White;
             this.lblEmpleadosTitulo.Location = new System.Drawing.Point(16, 11);
             this.lblEmpleadosTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmpleadosTitulo.Name = "lblEmpleadosTitulo";
@@ -96,7 +97,7 @@
             this.dgvEmpleados.AllowUserToDeleteRows = false;
             this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmpleados.Location = new System.Drawing.Point(16, 96);
-            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.ReadOnly = true;
             this.dgvEmpleados.Size = new System.Drawing.Size(1115, 414);
@@ -106,6 +107,7 @@
             // 
             this.lblEmpleadoBuscar.AutoSize = true;
             this.lblEmpleadoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpleadoBuscar.ForeColor = System.Drawing.Color.White;
             this.lblEmpleadoBuscar.Location = new System.Drawing.Point(831, 32);
             this.lblEmpleadoBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmpleadoBuscar.Name = "lblEmpleadoBuscar";
@@ -117,7 +119,7 @@
             // 
             this.txtEmpleadoBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpleadoBuscar.Location = new System.Drawing.Point(923, 28);
-            this.txtEmpleadoBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmpleadoBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmpleadoBuscar.Name = "txtEmpleadoBuscar";
             this.txtEmpleadoBuscar.Size = new System.Drawing.Size(208, 30);
             this.txtEmpleadoBuscar.TabIndex = 20;
@@ -136,10 +138,10 @@
             this.Controls.Add(this.btnEmpleadoLEditar);
             this.Controls.Add(this.lblEmpleadosTitulo);
             this.Controls.Add(this.dgvEmpleados);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EmpleadoLista";

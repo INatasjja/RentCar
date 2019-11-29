@@ -102,13 +102,13 @@ namespace RentCar
             
             if(lblCliId.Text == "Cliente ID")
             {
-                txtCliNombre.Text = "";
-                txtCliApellido.Text = "";
-                txtCliCedula.Text = "";
-                txtCliCredLim.Text = "";
-                txtCliCredCard.Text = "";
-                cbCliTipoCli.SelectedItem = 0;
-                ckbCliEstado.Checked = true;
+                //txtCliNombre.Text = "";
+                //txtCliApellido.Text = "";
+                //txtCliCedula.Text = "";
+                //txtCliCredLim.Text = "";
+                //txtCliCredCard.Text = "";
+                //cbCliTipoCli.SelectedItem = 0;
+                //ckbCliEstado.Checked = true;
             }
             else
             {
